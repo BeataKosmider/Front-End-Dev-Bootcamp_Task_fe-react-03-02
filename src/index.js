@@ -4,7 +4,7 @@ import './index.css';
 import List from './List';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<List listItems={['1', '2', '3']} isOrdered={true}/>, document.getElementById('root'));
+ReactDOM.render(<List />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

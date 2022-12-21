@@ -7,7 +7,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 const props = {
   listItems: ['1', '2', '3'],
-  isOrdered: true
+  isOrdered: true,
 };
 
 describe('List tests', () => {
@@ -15,19 +15,27 @@ describe('List tests', () => {
 
   beforeEach(() => {
     wrapper = shallow(<List {...props} />);
-  })
+  });
 
   it('Dodano poprawną ilość li wewnątrz ul', () => {
     expect(wrapper.find('li').length).toBe(props.listItems.length);
   });
 
-  it('Dodano poprawnie komponent listy OL, zgodnie z parametrem isOrdered', () => {
+  it('Dodano uporządkowaną listę (<ol>) jeśli isOrdered jest true', () => {
     expect(wrapper.find('ol').exists()).toBe(true);
   });
 
-  it('Dodano poprawnie komponent listy UL, zgodnie z parametrem isOrdered', () => {
+  it('Dodano nieuporządkowaną listę (<ul>) jeśli isOrdered jest false', () => {
     props.isOrdered = false;
     wrapper = shallow(<List {...props} />);
     expect(wrapper.find('ul').exists()).toBe(true);
+  });
+
+  it('Dodano key do kazdego li', () => {
+    const listItems = wrapper.find('li');
+
+    listItems.forEach((listItem, index) => {
+      expect(listItem.key()).toBe(String(index));
+    });
   });
 });
