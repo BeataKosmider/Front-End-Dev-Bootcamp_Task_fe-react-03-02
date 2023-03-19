@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" time="0.57">
+  <testsuite name="List tests" errors="0" failures="0" skipped="0" timestamp="2023-03-19T22:30:15" time="0.561" tests="3">
+    <testcase classname="List tests" name="Dodano poprawną ilość li wewnątrz ul" time="0.001">
+    </testcase>
+    <testcase classname="List tests" name="Dodano poprawnie komponent listy OL, zgodnie z parametrem isOrdered" time="0.001">
+    </testcase>
+    <testcase classname="List tests" name="Dodano poprawnie komponent listy UL, zgodnie z parametrem isOrdered" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

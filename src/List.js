@@ -1,17 +1,19 @@
-import React from 'react';
+import React from "react";
 
-function List({listItems, isOrdered}) {
+function List({ listItems, isOrdered }) {
   let TagName;
 
   if (isOrdered) {
-    TagName = 'ol';
+    TagName = "ol";
   } else {
-    TagName = 'ul';
+    TagName = "ul";
   }
 
   return (
     <TagName>
-      {listItems.map((li, key) => <li key={key}>{li}</li>)}
+      {listItems.map((li, key) => (
+        <li key={key}>{li}</li>
+      ))}
     </TagName>
   );
 }
