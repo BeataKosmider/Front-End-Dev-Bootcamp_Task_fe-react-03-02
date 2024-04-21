@@ -1,3 +1,10 @@
+Zmodyfikuj swój komponent List w taki sposób, aby komponent mógł wyświetlić jedną z dwóch: 
+
+listy uporządkowanej (<ol>)
+listy nieuporządkowanej (<ul>)
+… na podstawie przekazanego propu isOrdered (Boolean).
+Jeżeli isOrdered ma wartość true, wyświetl <ol>. W przeciwnym wypadku - <ul>. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
