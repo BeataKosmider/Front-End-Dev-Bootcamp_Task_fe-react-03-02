@@ -1,3 +1,5 @@
+Task performed during Front-End Developer Bootcamp
+
 Zmodyfikuj swój komponent List w taki sposób, aby komponent mógł wyświetlić jedną z dwóch: 
 
 listy uporządkowanej (<ol>)
